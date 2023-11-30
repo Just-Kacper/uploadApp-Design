@@ -62,7 +62,7 @@ html, body {
 .navbar a {
     text-decoration: none;
     color: #fff;
-    font-size: 16px; 
+    font-size: 20px; 
 }
 
 .header {
@@ -75,7 +75,7 @@ html, body {
 
 .header-welcome {
     margin-bottom: 20px; 
-    font-size: 30px; 
+    font-size: 50px; 
     color: #fff;
 }
 
@@ -89,8 +89,8 @@ html, body {
 }
 
 .input-text {
-    padding: 8px; 
-    font-size: 20px;
+    padding: 16px; 
+    font-size: 30px;
     color: #fff;
     background: #FFC436;
     border: none;
@@ -115,38 +115,59 @@ html, body {
 
 .pricing {
     display: flex;
-    flex-direction: column; 
-}
+    flex-direction: row; 
+} 
 
 .first, .second, .third {
     background-color: #F0ECE5;
     padding: 15px; 
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px; 
+    margin-bottom: 20px;  
+    text-align: center;
 }
 
-.first, .third {
+ .first, .second , .third {
     margin: 0 auto; 
+} 
+ /*  TEXT COLORS */
+.basic {
+    color: #776B5D;
+} .premium {
+    color: #1640D6;
+} .ultra {
+    color: #FFB000;
 }
+
+.basic-text {
+    color: #776B5D;
+} .premium-text {
+    color: #1640D6;
+} .ultra-text {
+    color: #FFB000;
+}
+
+
+/*  TEXT COLORS */
 
 .basic, .premium, .ultra {
-    font-size: 1.5rem; 
+    font-size: 2.5rem; 
     margin-bottom: 10px; 
 }
 
 .price {
     font-size: 1.2rem; 
     margin-bottom: 8px; 
+    color: #1A5D1A;
 }
 
 .include {
-    font-size: 1rem; 
+    font-size: 1.5rem; 
     margin-bottom: 15px; 
 }
 
 .feature {
-    font-size: 0.8rem; 
+    font-size: 1rem; 
     list-style: none;
     margin-bottom: 10px; 
 }
