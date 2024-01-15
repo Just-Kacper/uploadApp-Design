@@ -1,296 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-@keyframes cursor-blink {
-    0% {
-        opacity: 0;
-    }
-}
-
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    color: #fff;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
-html, body {
-    height: 100vh;
-    background: #526D82;
+body {
+    height: 100dvh;
+    background-color:hsla(206,100%,10%,1);
+    background-image:
+    radial-gradient(at 43% 67%, hsla(293,80%,72%,1) 0px, transparent 50%),
+    radial-gradient(at 58% 91%, hsla(169,72%,63%,1) 0px, transparent 50%),
+    radial-gradient(at 86% 6%, hsla(328,91%,65%,1) 0px, transparent 50%),
+    radial-gradient(at 6% 81%, hsla(191,85%,73%,1) 0px, transparent 50%),
+    radial-gradient(at 14% 76%, hsla(302,79%,60%,1) 0px, transparent 50%),
+    radial-gradient(at 6% 45%, hsla(136,78%,76%,1) 0px, transparent 50%),
+    radial-gradient(at 60% 69%, hsla(61,70%,67%,1) 0px, transparent 50%);
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 80px;
+    justify-content: space-around;
     padding: 0 20px;
+    height: 80px;
 }
 
-.navbar h1 {
-    color: #fff;
+.navbar .heading span {
+    color: #FFFF00;
 }
 
-.navbar ul {
-    display: flex;
-}
+/* LOGIN BUTTONS */
 
-.navbar > ul > button {
+.navbar .logging-btns button {
+    padding: 12px;
     border: none;
-    background-color: #526D82;
-    margin-right: 15px; 
     cursor: pointer;
+    background: none;
 }
 
-.navbar .upload {
-    border: none;
-    padding: 6px;
-    border-radius: 10px;
-    background: #FFC436;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.navbar .upload:hover {
-    background: #EE9322;
-}
-
-.navbar .upload > p {
-    font-size: 20px; 
-    color: #fff;
-}
-
-.navbar a {
+.navbar .logging-btns button a {
     text-decoration: none;
-    color: #fff;
-    font-size: 20px; 
+    font-size: 1.25rem;
+    transition: all .3s ease-in-out;
+} .navbar .logging-btns button a:hover {
+    color: #FFFF00;
 }
 
-.header {
-    height: 500px; 
+/* UPLOAD BUTTON */
+
+.navbar .upload-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #FFFF00;
+    transition: all .3s ease-in-out;
+}
+.navbar .upload-btn:hover {
+    transform: scale(1.05);
+}
+
+.navbar .upload-btn p {
+    color: #526D82;
+    font-size: 1.1rem;
+}
+
+
+/* SECTION ONE */
+
+.introduction {
+    height: 500px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.header-welcome {
-    margin-bottom: 20px; 
-    font-size: 50px; 
-    color: #fff;
+.introduction .seperator {
+    font-size: 3.25rem;
+}
+.introduction .seperator span {
+    color: #FFFF00;
 }
 
-.header-welcome::after {
-    content: "";
-    width: 2px;
-    height: 30px; 
-    background: #fff;
-    display: inline-block;
-    animation: cursor-blink 1.5s steps(2) infinite;
+.introduction p {
+    max-width: 700px;
+    text-align: center;
+    line-height: 1.5;
 }
 
-.input-text {
-    padding: 16px; 
-    font-size: 30px;
-    color: #fff;
-    background: #FFC436;
+.introduction .try-btn {
+    margin-top: 30px;
+    padding: 15px 40px;
     border: none;
-    border-radius: 15px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-radius: 12px;
+    background: #864AF9;
 }
 
-.input-text:hover {
-    background-color: #EE9322;
+.introduction .try-btn p {
+    font-size: 1.25rem;
 }
-
-/* PRICING PLAN FEATURES */
-
-.main-text {
-    font-size: 2.5rem; 
-    color: #fff;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.pricing {
-    display: flex;
-    flex-direction: row; 
-} 
-
-.first, .second, .third {
-    background-color: #F0ECE5;
-    padding: 15px; 
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;  
-    text-align: center;
-}
-
- .first, .second , .third {
-    margin: 0 auto; 
-} 
- /*  TEXT COLORS */
-.basic {
-    color: #776B5D;
-} .premium {
-    color: #1640D6;
-} .ultra {
-    color: #FFB000;
-}
-
-.basic-text {
-    color: #776B5D;
-} .premium-text {
-    color: #1640D6;
-} .ultra-text {
-    color: #FFB000;
+.introduction .try-btn p span {
+    color: #FFFF00;
 }
 
 
-/*  TEXT COLORS */
 
-.basic, .premium, .ultra {
-    font-size: 2.5rem; 
-    margin-bottom: 10px; 
-}
-
-.price {
-    font-size: 1.2rem; 
-    margin-bottom: 8px; 
-    color: #1A5D1A;
-}
-
-.include {
-    font-size: 1.5rem; 
-    margin-bottom: 15px; 
-}
-
-.feature {
-    font-size: 1rem; 
-    list-style: none;
-    margin-bottom: 10px; 
-}
-
-@media screen and (max-width: 768px) {
-    
-    .navbar {
-        padding: 0 10px;
-    }
-
-    .navbar .upload {
-        padding: 0px;
-    }
-
-    .header-welcome {
-        font-size: 20px;
-        margin-bottom: 3px;
-    }
-
-    .header {
-        height: 400px;
-    }
-
-    .input-text {
-        font-size: 18px;
-        border-radius: 12px;
-        padding: 6px;
-    }
-
-    .main-text {
-        font-size: 2rem;
-        margin-bottom: 20px;
-    }
-
-    .pricing {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .first, .second, .third {
-        padding: 10px;
-        margin-bottom: 15px;
-        margin-left: 0;
-        margin-right: 0; 
-    }
-
-    .basic, .premium, .ultra {
-        font-size: 1.2rem;
-        margin-bottom: 8px;
-    }
-
-    .price {
-        font-size: 1rem;
-        margin-bottom: 6px;
-    }
-
-    .include {
-        font-size: 0.9rem;
-        margin-bottom: 10px;
-    }
-
-    .feature {
-        font-size: 0.7rem;
-        margin-bottom: 6px;
-    }
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 1180px) {
-    .navbar {
-        padding: 0 20px;
-    }
-    
-    .header-welcome {
-        font-size: 30px;
-        margin-bottom: 8px;
-    }
-
-    .header {
-        height: 500px;
-    }
-
-    .input-text {
-        font-size: 22px;
-        border-radius: 14px;
-        padding: 8px;
-    }
-
-    .main-text {
-        font-size: 2.2rem;
-        margin-bottom: 25px;
-    }
-
-    .first, .second, .third {
-        padding: 18px;
-        margin-bottom: 25px;
-    }
-
-    .second {
-        max-width: 500px;
-        width: 250px;
-        padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .basic, .premium, .ultra {
-        font-size: 1.8rem;
-        margin-bottom: 12px;
-    }
-
-    .price {
-        font-size: 1.4rem;
-        margin-bottom: 10px;
-    }
-
-    .include {
-        font-size: 1.1rem;
-        margin-bottom: 20px;
-    }
-
-    .feature {
-        font-size: 0.9rem;
-        margin-bottom: 15px;
-    }
-}
