@@ -24,6 +24,5 @@ function startCountingUp(targetValue, duration, elementId) {
     observer.observe(counterElement);
   }
 
-  // Usage example
   startCountingUp(15980, 100, 'registeredUsersValue');
   startCountingUp(28575, 100, 'uploadedFilesValue');
