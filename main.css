@@ -4,22 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
+    color: #333;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
     height: 100dvh;
-    background-color:hsla(206,100%,10%,1);
-    background-image:
-    radial-gradient(at 43% 67%, hsla(293,80%,72%,1) 0px, transparent 50%),
-    radial-gradient(at 58% 91%, hsla(169,72%,63%,1) 0px, transparent 50%),
-    radial-gradient(at 86% 6%, hsla(328,91%,65%,1) 0px, transparent 50%),
-    radial-gradient(at 6% 81%, hsla(191,85%,73%,1) 0px, transparent 50%),
-    radial-gradient(at 14% 76%, hsla(302,79%,60%,1) 0px, transparent 50%),
-    radial-gradient(at 6% 45%, hsla(136,78%,76%,1) 0px, transparent 50%),
-    radial-gradient(at 60% 69%, hsla(61,70%,67%,1) 0px, transparent 50%);
+    background-color: #f9f5eb;
 }
 
 .navbar {
@@ -31,7 +23,7 @@ body {
 }
 
 .navbar .heading span {
-    color: #FFFF00;
+    color: #864AF9;
 }
 
 /* LOGIN BUTTONS */
@@ -48,7 +40,7 @@ body {
     font-size: 1.25rem;
     transition: all .3s ease-in-out;
 } .navbar .logging-btns button a:hover {
-    color: #FFFF00;
+    color: #864AF9;
 }
 
 /* UPLOAD BUTTON */
@@ -58,7 +50,7 @@ body {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    background: #FFFF00;
+    background: #864AF9;
     transition: all .3s ease-in-out;
 }
 .navbar .upload-btn:hover {
@@ -66,7 +58,7 @@ body {
 }
 
 .navbar .upload-btn p {
-    color: #526D82;
+    color: #fff;
     font-size: 1.1rem;
 }
 
@@ -85,7 +77,7 @@ body {
     font-size: 3.25rem;
 }
 .introduction .seperator span {
-    color: #FFFF00;
+    color: #864AF9;
 }
 
 .introduction p {
@@ -98,16 +90,93 @@ body {
     margin-top: 30px;
     padding: 15px 40px;
     border: none;
-    border-radius: 12px;
+    border-radius: .75rem;
+    cursor: pointer;
     background: #864AF9;
+    color: #fff;
+    transition: all .3s ease-in-out;
+}
+.introduction .try-btn:hover {
+    background: #854eec;
 }
 
 .introduction .try-btn p {
     font-size: 1.25rem;
 }
 .introduction .try-btn p span {
-    color: #FFFF00;
+    color: #fff;
 }
+
+
+/* SOCIAL PROOF */
+
+.social-proof {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 6.25rem;
+}
+
+.social-proof .left-section .heading {
+    line-height: 50px;
+    font-size: 3.25rem;
+}
+
+.social-proof .right-section {
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 20px 50px;
+}
+
+.divider {
+    border: 1px solid #333;
+}
+
+.social-proof .right-section .content {
+
+}
+
+
+/* PRICE PLAN */
+
+.price-plan {
+    display: flex;
+    justify-content: space-around;
+}
+
+.price-plan .card {
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 8px 8px 58px -25px rgba(66, 68, 90, 1);
+    padding: 5px;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+.price-plan .card:hover {
+    box-shadow: 8px 8px 55px 18px rgba(66, 68, 90, 1);
+    transform: scale(1.03);
+}
+.price-plan .card ul {
+    list-style: none;
+}
+.price-plan .card h4 {
+    color: #5b3e99;
+}
+
+
+.price-plan .ba-plan h1 {
+    color: #3498DB; 
+}
+.price-plan .prm-plan h1 {
+    background: linear-gradient(to right, #2ECC71, #FFD700);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.price-plan .prmp-plan h1 {
+    background: linear-gradient(to right, #9B59B6, #E5E4E2);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
 
 
 
