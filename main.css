@@ -11,7 +11,7 @@
 
 body {
     height: 100dvh;
-    background-color: #f9f5eb;
+    background-color: #F9F5EB;
 }
 
 .navbar {
@@ -22,9 +22,7 @@ body {
     height: 80px;
 }
 
-.navbar .heading span {
-    color: #864AF9;
-}
+.navbar .heading span { color: #864AF9; }
 
 /* LOGIN BUTTONS */
 
@@ -39,9 +37,9 @@ body {
     text-decoration: none;
     font-size: 1.25rem;
     transition: all .3s ease-in-out;
-} .navbar .logging-btns button a:hover {
-    color: #864AF9;
-}
+} 
+
+.navbar .logging-btns button a:hover { color: #864AF9; }
 
 /* UPLOAD BUTTON */
 
@@ -53,9 +51,7 @@ body {
     background: #864AF9;
     transition: all .3s ease-in-out;
 }
-.navbar .upload-btn:hover {
-    transform: scale(1.05);
-}
+.navbar .upload-btn:hover { transform: scale(1.05); }
 
 .navbar .upload-btn p {
     color: #fff;
@@ -73,12 +69,8 @@ body {
     flex-direction: column;
 }
 
-.introduction .seperator {
-    font-size: 3.25rem;
-}
-.introduction .seperator span {
-    color: #864AF9;
-}
+.introduction .seperator { font-size: 3.25rem; }
+.introduction .seperator span { color: #864AF9; }
 
 .introduction p {
     max-width: 700px;
@@ -93,47 +85,16 @@ body {
     border-radius: .75rem;
     cursor: pointer;
     background: #864AF9;
-    color: #fff;
+    color: #F9F5EB;
     transition: all .3s ease-in-out;
 }
 .introduction .try-btn:hover {
-    background: #854eec;
+    background: #7e4adf;
+    transform: scale(1.01);
 }
 
-.introduction .try-btn p {
-    font-size: 1.25rem;
-}
-.introduction .try-btn p span {
-    color: #fff;
-}
-
-
-/* SOCIAL PROOF */
-
-.social-proof {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 6.25rem;
-}
-
-.social-proof .left-section .heading {
-    line-height: 50px;
-    font-size: 3.25rem;
-}
-
-.social-proof .right-section {
-    border: 2px solid #333;
-    border-radius: 12px;
-    padding: 20px 50px;
-}
-
-.divider {
-    border: 1px solid #333;
-}
-
-.social-proof .right-section .content {
-
-}
+.introduction .try-btn p { font-size: 1.25rem; }
+.introduction .try-btn p span { color: #F9F5EB; }
 
 
 /* PRICE PLAN */
@@ -150,22 +111,19 @@ body {
     padding: 5px;
     text-align: center;
     transition: all .2s ease-in-out;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .price-plan .card:hover {
     box-shadow: 8px 8px 55px 18px rgba(66, 68, 90, 1);
     transform: scale(1.03);
 }
-.price-plan .card ul {
-    list-style: none;
-}
-.price-plan .card h4 {
-    color: #5b3e99;
-}
 
+.price-plan .card ul { list-style: none; }
+.price-plan .card h4 { color: #5b3e99; }
+.price-plan .ba-plan h1 { color: #3498DB; }
 
-.price-plan .ba-plan h1 {
-    color: #3498DB; 
-}
 .price-plan .prm-plan h1 {
     background: linear-gradient(to right, #2ECC71, #FFD700);
     -webkit-background-clip: text;
@@ -177,6 +135,87 @@ body {
     color: transparent;
 }
 
+.price-plan .btn-container { margin-top: auto; }
+
+.price-plan .btn-container button {
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #864AF9;
+    align-items: flex-end;
+}
+
+.price-plan button a { text-decoration: none; }
+
+/* SOCIAL PROOF */
+
+.social-proof {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 23.75rem;
+    margin: 6.25rem 0 6.25rem 0;
+}
+
+.social-proof .left-section .heading {
+    line-height: 50px;
+    font-size: 3.25rem;
+}
+
+.social-proof .right-section {
+    border: 2px solid #333;
+    border-radius: 12px;
+    padding: 20px 50px;
+}
+
+.social-proof .right-section .heading { font-size: 1.5rem; }
+.social-proof .right-section .divider { border: 1px solid #333; }
 
 
+/* FOOTER */
+
+.footer {
+    background: #444;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer .info-group .logo { color: #F9F5EB; } 
+.footer .info-group span { color: #864AF9; }
+
+.footer .info-group .slogan {
+    font-size: 1.25rem;
+    color: #F9F5EB;
+}
+
+.footer .info-group .light {
+    font-size: .9rem; 
+    color: #F9F5EB;
+}
+
+.footer-nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.footer-nav .first { grid-area: 1 / 2 / 2 / 3; }
+.footer-nav .second { grid-area: 1 / 3 / 2 / 4; }
+.footer-nav .third { grid-area: 1 / 4 / 2 / 5; }
+.footer-nav .fourth { grid-area: 1 / 5 / 2 / 6; }
+
+.footer-nav .title {
+    color: #F9F5EB;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.footer-nav .block a {
+    font-size: 1.25rem;
+    text-decoration: none;
+}
 
