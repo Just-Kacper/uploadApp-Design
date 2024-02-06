@@ -147,7 +147,10 @@ body {
     align-items: flex-end;
 }
 
-.price-plan button a { text-decoration: none; }
+.price-plan button a { 
+    text-decoration: none; 
+    color: #F9F5EB;
+}
 
 /* SOCIAL PROOF */
 
